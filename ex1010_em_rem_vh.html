@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이지 사이즈 확인하기</title>
+    <style>
+        div{
+            background-color: antiquewhite;
+            font-size: 16px;
+        }
+        .item{
+            width: 50%;
+            background-color: gray;
+            margin: 5px;
+            border: 1px solid red;
+        }
+        .item_50{
+            width: 50%;
+            background-color: palevioletred;
+        }
+        .item_parent{
+            font-size: 10px;
+        }
+        .item_em{
+            font-size: 1.5em;
+            border: 1px solid aqua;
+        }
+        .item_rem{
+            font-size: 3vw;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>%</h3>
+        <div class="item">item01</div>
+        <div class="item">
+            <div class="item_50">item_%</div>
+        </div>
+    </div>
+    <div>
+        <h3>em</h3>
+        <div class="item">item02</div>
+        <div class="item item_parent">
+            <div class="item_em">item_em</div>
+        </div>
+    </div>
+    <div>
+        <h3>vw, vh</h3>
+        <div class="item">item02</div>
+        <div class="item item_parent">
+            <div class="item_rem">item_rem</div>
+        </div>
+    </div>
+</body>
+</html>

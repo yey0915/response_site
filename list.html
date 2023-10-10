@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E : ROOM 에 오신걸 환영합니다</title>
+    <link rel="stylesheet" href="./css/site.css" />
+</head>
+<body>
+    <header>
+        <ul>
+            <li>재고 조회</li>
+            <li>자재 입고</li>
+            <li>자재 출고</li>
+            <li>자재 그룹 입력</li>
+            <li>자재 그룹 조회</li>
+            <li>자재 품목 입력</li>
+            <li>자재 품목 조회</li>
+            <li>완재품 입고</li>
+            <li>완재품 출고</li>
+            <li>견적서 입력</li>
+            <li>관리자 메뉴</li>
+        </ul>
+    </header>
+    <div id="content">
+        <div id="left"></div>
+        <div id="center">
+            <h5><img src="images/pin.png" >재고 리스트 페이지</h5>
+            <div id="searchForm">
+                <div id="leftFrm">
+                    <form action="/board/list_products" method="get">
+                        <input type="hidden" name="size" value="임시데이터">
+                        <select>
+                            <option selected>--</option>
+                            <option value="t" >제품명</option>
+                            <option value="c" >내용</option>
+                            <option value="w" >작성자</option>
+                            <option value="tc" >제품명 내용</option>
+                            <option value="tcw" >제품명 내용 작성자</option>
+                        </select>
+                        <input type="text" name="keyword" id="keyword">
+                    </form>
+                </div>
+                <div id="btnLst">
+                    <input type="submit" name="btnSch" id="btnSch" value="검색">
+                    <input type="button" name="btnCls" id="btnCls" value="초기화">
+                </div>                
+            </div>
+            <div id="contentList">
+                <div id="title">
+                    <div>번호</div>
+                    <div>제품명</div>
+                    <div>작성장</div>
+                    <div>수량</div>
+                    <div>조회수</div>
+                    <div>작성일</div>
+                </div>
+                <div class="clear">
+                    <div class="row">번호</div>
+                    <div class="row"><a href="#" >제품명</a></div>
+                    <div class="row">작성자</div>
+                    <div class="row">수량</div>
+                    <div class="row">조회수</div>
+                    <div class="row">등록일</div>
+                </div>
+                <div class="clear">
+                    <div class="row">번호</div>
+                    <div class="row"><a href="#" >제품명</a></div>
+                    <div class="row">작성자</div>
+                    <div class="row">수량</div>
+                    <div class="row">조회수</div>
+                    <div class="row">등록일</div>
+                </div>
+                <div id="pageNum" class="pageNum clear">
+                    <ul>
+        <!--                <input type="button" onclick="a_alert()">-->
+                        <!-- <th:block th:each="i:${#numbers.sequence(boardList.start, boardList.end)}"> -->
+                        <li>
+                            <a href="#">1</a>
+                        </li>
+                        <!-- </th:block> -->
+                    </ul>
+                </div>
+            </div>           
+        </div>
+        <div id="right"></div>
+    </div>
+    <footer>
+        전체서비스 | 이용약관 | 개인정보처리방침 | 통합검색 고객센터  E : ROOM 
+    </footer>
+</body>
+</html>
