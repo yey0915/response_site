@@ -47,10 +47,14 @@ h5 img{
 #leftFrm{
     width: 80%;
     float: left;
+    box-sizing: border-box;
+    border: 1px solid red;
 }
 #btnLst{
-    /* width: 20%; */
+    width: 20%;
     float: right;
+    box-sizing: border-box;
+    border: 1px solid blueviolet;
 }
 
 #btnSch{
