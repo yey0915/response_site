@@ -183,7 +183,7 @@ footer{
     .popular li a {font-size: 2.7vw; }
 }
 
-/* phone */
+/* 768px 이상 */
 @media (min-width: 768px){
     .content:after{
         content: ""; display: block; clear: both;
