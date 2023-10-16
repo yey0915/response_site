@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 body{font-family: "맑은 고딕", 'Apple SD Gothic Neo', sans-serif; margin: 0;}
+a{text-decoration: none; color: #555;}
 
 /* 사이트 이름 */
 .site{padding-top: 8px; padding-bottom: 8px;}
@@ -35,14 +36,18 @@ body{font-family: "맑은 고딕", 'Apple SD Gothic Neo', sans-serif; margin: 0;
 
 /* 본문 */
 .summary01 img{width: 100%; height: auto; border: none;}
+/* .summary{width: 50%; float: left; box-sizing: border-box;} */
 
+/* .cont_summary:after{
+    content: ""; display: block; clear: both
+} */
 
 /* footer */
 footer{
-    border-top: solid 1px #ddd; padding-top:15px; padding-bottom: 15px;
+    border-top: solid 1px #ddd; padding-top:15px; padding-bottom: 15px; clear: both;
 }
 .copyright p{
-    color: #666; font-size: 0.8em; clear: both;
+    color: #666; font-size: 0.8em; 
 }
 
 
