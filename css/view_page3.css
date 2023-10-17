@@ -13,8 +13,11 @@ header:after{display: block; content: ""; clear: both;}
 .logo h3 a{
     color: #83a4a8; text-decoration: none;
 }
+.logo img{width: 30px; padding-right: 10px; border: none;}
+
 
 /* nav */
+/* .menu {border: 1px solid red;} */
 .menu ul{margin: 0; padding: 0; list-style: none;}
 .menu li{ float: left; width: auto;}
 .menu li a{
@@ -46,7 +49,12 @@ header:after{display: block; content: ""; clear: both;}
 .news li a:hover{background-color: #eee;}
 .news time{
     margin-right: 10px; color: #888; font-weight: bold;
+    float: left; width: 60px;
 }
+.news .text{
+    float: none; width: auto; margin-left: 70px;
+}
+
 
 
 footer {margin: 0 auto; width: 100%;}
@@ -70,16 +78,36 @@ footer p{
 .notice{padding-top: 20px; padding-bottom: 20px;}
 
 
-
-
+/* 599px 이하 */
 @media (max-width: 599px){
-    
+    /* nav */
+    .logo h3{font-size: 1.4em;}
+    .menu li a{
+        padding: auto 7px; font-size: 0.7em;
+    }
 }
 
+
+/* 768px 이상 */
 @media (min-width: 767px){
     .logo{
         width: 50%; float: left; box-sizing: border-box;
         /* border: 1px solid red;  */
     }
-    .menu{padding-top: 30px; float: right; box-sizing: border-box;}
+    .cont_menu{width: 50%; float: right; padding-top: 20px; box-sizing: border-box;}
 }
+
+
+/* 1190px 이상 */
+@media (min-width: 1190px){
+    header, .img, .news, footer{
+        width: 1140px; margin-left: auto; margin-right: auto;
+    }
+    .header{
+        margin-bottom: 20px; border-bottom: solid 1px #ddd;
+    }
+}
+
+
+
+
