@@ -29,15 +29,21 @@ header:after{display: block; content: ""; clear: both;}
 /* header img */
 .img img{
     /* border: 1px solid green; max-width: 100%; */
-    width: 100%; height: auto; vertical-align: bottom;
+    width: 100%; height: auto; vertical-align: bottom; 
 }
+.caption{
+    margin: 0; padding: 15px; background-color: rgba(55, 55, 55, 0.7); 
+    font-size: 1.1em; color: #fff;
+}
+.img_inner{position: relative;}
+.caption{position: absolute; left: 3%; bottom: 7%; width: 40%; height: auto;}
 
 
 /* clinic subjet */
 .subject img{width: 100%; height: 25vh;}
 
 .subject a{
-    display: block; background-color: #222; color: #fff; text-align: center;
+    display: block; background-color: #444; color: #fff; text-align: center;
     text-decoration: none;
 }
 .subject a:hover{opacity: 0.7;}
@@ -45,17 +51,17 @@ header:after{display: block; content: ""; clear: both;}
     margin-top: 0; margin-bottom: 0; padding-top: 5px; padding-bottom: 5px;
     font-size: 1.2em; font-weight: normal;
 }
-.subject:nth-child(n) p{
+.subject:nth-child(even) p{
     margin-top: 0; margin-bottom: 0; padding-top: 15px; padding-bottom: 15px;
-    background-color: #bfbd13; font-size: 0.7em; height: 3vh;
+    background-color: #b29d97; font-size: 0.7em; height: 3vh;
 }
-.subject:nth-child(2n) p{
+.subject:nth-child(odd) p{
     margin-top: 0; margin-bottom: 0; padding-top: 15px; padding-bottom: 15px;
-    background-color: #c58839; font-size: 0.7em;
+    background-color: #98a9b4; font-size: 0.7em;
 }
 .subject:nth-child(3n) p{
     margin-top: 0; margin-bottom: 0; padding-top: 15px; padding-bottom: 15px;
-    background-color: #524e3c; font-size: 0.7em;
+    background-color: #efe2af; font-size: 0.7em;
 }
 
 
@@ -144,6 +150,7 @@ footer p{
     }
 
     .news{margin-bottom: 20px;}
+    .caption{font-size: 0.7em;}
 }
 
 
@@ -180,7 +187,7 @@ footer p{
 /* 1190px 이상 */
 @media (min-width: 1190px){
     header, .img, .clinic, .notice, footer{
-        width: 1140px; margin-left: auto; margin-right: auto;
+        width: 1100px; margin-left: auto; margin-right: auto;
     }
     .header{
         margin-bottom: 20px; border-bottom: solid 1px #ddd;
