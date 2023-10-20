@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+a{text-decoration: none;}
+ul li{list-style: none;}
+
+#mySidenav a{
+    position: absolute; left: -80px; transition: 0.3s; padding: 15px;
+    width: 100px; font-size: 1.2em; color: #444; border-radius: 0 5px 5px 0;
+}
+#mySidenav a:hover{
+    left: 0;
+}
+
+#about{top: 20px; background-color: #98a9b4;}
+#blog{top: 80px; background-color: #efe2af;}
+#projects{top: 140px; background-color: #d3b4af;}
+#contact{top: 200px; background-color: #ad3f2d;}
+
+.textContent{
+    margin-left: 10px; background-image: url(../images/han12.png);
+    background-repeat: no-repeat; width: 1000px; background-size:contain;
+    background-attachment: fixed; padding: 30px 50px 200px 50px;
+    
+}
+.textContent h3{color: #fff;}
+
+
