@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.vertical_menu{
+    width: 20%; float: left; background-color: cadetblue; box-sizing: border-box;
+
+}
+.vertical_menu a{text-decoration: none; display: block; padding: 12px; color: black;}
+.vertical_menu a:hover{background-color: #ccc;}
+.vertical_menu a.active{background-color: #0D274D; color: white;}
+
+.content{width: 80%; background-color: bisque; height: 100px; display: block; float: left;}
+
+
+
